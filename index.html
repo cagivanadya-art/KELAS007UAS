@@ -4,13 +4,197 @@
   <meta charset="UTF-8">
   <title>Kelas 01SIFP007</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #0f172a;
+      background: #ffffff;
+      scroll-behavior: smooth;
+    }
+
+    /* ===== HEADER & LOGO ===== */
+    header {
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #197bcc;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: white;
+    }
+
+    .logo img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+
+    .logo span {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      padding: 60px;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .hero-text p {
+      line-height: 1.6;
+    }
+
+    .hero-gif img {
+      width: 420px;
+      max-width: 100%;
+    }
+
+    /* ===== SECTION ===== */
+    .section {
+      padding: 40px 60px;
+    }
+
+    /* ===== TABLE ===== */
+    .table-wrapper {
+      overflow-x: auto;
+      margin-top: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 600px;
+    }
+
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #e5e7eb;
+      text-align: left;
+    }
+
+    th {
+      background: #197bcc;
+      color: #ffffff;
+    }
+
+    td a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    td a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #0b2536;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+      margin-top: 40px;
+    }
+
+    footer img {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+
+    footer h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    footer p {
+      color: #cbd5e1;
+      margin-bottom: 20px;
+    }
+
+    .footer-nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+
+    .footer-nav a:hover {
+      text-decoration: underline;
+    }
+
+    footer small {
+      display: block;
+      margin-top: 25px;
+      color: #94a3b8;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .section {
+        padding: 30px 20px;
+      }
+
+      .hero-gif img {
+        width: 280px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
 <header>
   <div class="logo">
-    <img src="logo-unpam.png" alt="Logo Kelas">
+    <img src="logo-unpam.png" alt="Logo UNPAM">
     <span>Kelas 01SIFP007</span>
   </div>
   <nav>
@@ -19,7 +203,6 @@
     <a href="#tentang">Tentang</a>
   </nav>
 </header>
-
 
 <!-- ===== BERANDA ===== -->
 <section class="hero" id="home">
@@ -35,6 +218,7 @@
   </div>
 </section>
 
+<!-- ===== ANGGOTA ===== -->
 <section class="section" id="anggota">
   <h2>Anggota Kelas</h2>
 
@@ -43,9 +227,8 @@
       <tr>
         <th>NO</th>
         <th>NAMA</th>
-        <Th>NIM</Th>
+        <th>NIM</th>
         <th>LINK WEBSITE</th>
-      </tr>
 <tr>
     <td>1</td>
     <td>Abdillah Fathi Arrisqi</td>
@@ -317,10 +500,10 @@
     secara cepat.
   </p>
 </section>
+
 <footer>
   <img src="logo-unpam.png" alt="Logo UNPAM">
-  <h3>Kelas01SIFP007
-  </h3>
+  <h3>Kelas01SIFP007</h3>
   <p>Website Resmi Kelas 01SIFP007 Sistem Informasi UNPAM</p>
 
   <div class="footer-nav">
@@ -335,5 +518,3 @@
 </body>
 </html>
 
-</body>
-</html>
