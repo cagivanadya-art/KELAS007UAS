@@ -227,6 +227,64 @@
     width: 280px;
   }
 }
+.tentang-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 25px;
+}
+
+.tentang-img {
+  width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.tentang-text {
+  flex: 1;
+  text-align: center;
+}
+
+.tentang-text h3 {
+  margin-bottom: 5px;
+  color: #197bcc;
+}
+
+.tentang-text p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tentang-wrapper {
+    flex-direction: column;
+  }
+
+  .tentang-img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .tentang-text {
+    text-align: center;
+  }
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tentang-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tentang-wrapper img {
+    width: 100%;
+    max-width: 320px;
+  }
+}
 
   </style>
 </head>
@@ -257,6 +315,36 @@
     <img src="IT2.gif" alt="Ilustrasi Teknologi">
   </div>
 </section>
+
+<section class="section" id="tentang">
+  <h2>Tentang 01SIFP007</h2>
+
+  <div class="tentang-wrapper">
+
+    <!-- Foto Kiri -->
+    <img src="foto1.jpeg" alt="Foto Kelas 01SIFP007" class="tentang-img">
+
+    <!-- Teks Tengah -->
+    <div class="tentang-text">
+      <h3>Wali Kelas</h3>
+      <p>Abdul Choliq, S.Kom., M.Kom.</p>
+
+      <h3>Ketua Kelas</h3>
+      <p>Kholish</p>
+
+      <p>
+        Website ini dibuat sebagai website kelas 01SIFP007 Program Studi Sistem Informasi
+        Universitas Pamulang. Digunakan untuk mengumpulkan dan menampilkan
+        link website serta file PDF dan tugas mahasiswa dalam satu tempat.
+      </p>
+    </div>
+
+    <!-- Foto Kanan -->
+    <img src="foto2.jpeg" alt="Foto Kelas 01SIFP007" class="tentang-img">
+
+  </div>
+</section>
+
 
 <!-- ===== ANGGOTA ===== -->
 <section class="section" id="anggota"> 
@@ -295,7 +383,7 @@
     <td>3</td>
     <td>Andika Ardiyansah</td>
     <td>251011700433</td>
-    <td><a href="https://example.com" target="_blank">Link Website</a>
+    <td><a href="https://andikaardy.github.io/UAS-PWEB1-2025/" target="_blank">https://andikaardy.github.io/UAS-PWEB1-2025/</a>
     </td>
       <td>-</td>
 </tr>
@@ -389,7 +477,7 @@
     <td>13</td>
     <td>Kamelia Agustin</td>
     <td>251011700406</td>
-    <td><a href="https://example.com" target="_blank">Link Website</a>
+    <td><a href="https://kameliaagustin386-rgb.github.io/Portfolio/" target="_blank">https://kameliaagustin386-rgb.github.io/Portfolio/</a>
     </td>
       <td>-</td>
 </tr>
@@ -560,7 +648,7 @@
     <td>Yulian Indira Putra</td>
     <td>251011700416</td>
     <td>
-        <a href="https://example.com" target="_blank">Link Website</a>
+        <a href="https://yulianindira8-stack.github.io/portofolio-yulian-uas/index.html" target="_blank">https://yulianindira8-stack.github.io/portofolio-yulian-uas/index.html</a>
     </td>
       <td>-</td>
 </tr>
